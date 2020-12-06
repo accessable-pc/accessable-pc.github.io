@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>Accessable Home</title>
+    <link rel="icon" href="assets/favicon.png" sizes="16x16" type="image/png">
+
+</head>
+
+<body>
+
+    <div class="login-main">
+        <header>
+            <img class="favicon" src="assets/favicon.png" alt="">
+            <h6 class="displayname_drop" id="pc-name"></h6>
+        </header>
+        <main>
+            <div>
+                <div class="intro">
+                    <h1>Control Your Pc here,<br> without any effort.</h1>
+                    <p>You can run windows commands, run executable files, some file managing options and push notification right here!</p>
+                </div>
+            </div>
+            <div class="home-pane">
+                <div class="home-icons">
+
+                    <a href="terminal.html" title="Open Command Prompt">
+                        <i class="material-icons">
+                            offline_bolt
+                        </i>
+                    </a>
+
+                    <span style="margin-right: 10px;"></span>
+
+                    <a title="Send push notification" id="msg-btn">
+                        <i class="material-icons">
+                            maps_ugc
+                        </i>
+                    </a>
+
+                    <span style="margin-right: 10px;"></span>
+
+                    <a href="files.html" title="Open basic filemanager">
+                        <i class="material-icons">
+                            folder
+                        </i>
+                    </a>
+
+                    <span style="margin-right: 10px;"></span>
+                    
+                    <a title="Execute file" id="opop-btn">
+                        <i class="material-icons">
+                            contactless
+                        </i>
+                    </a>
+
+                </div>
+
+
+                <div class="opt-pop" id="opop">
+                    <button id="shut-down">Shutdown</button><br>
+                    <button id="re-start">Restart</button><br>
+                    <button id="lock">Lock</button>
+                    <button id="log-out">Log out</button>
+                </div>
+
+                <div class="message-pop" id="mpop">
+                    <div class="m-pop-head">
+                        <h2>Push notify</h2>
+                        <p>Send push notification to your pc in one click!</p>
+                    </div>
+                    <input type="text" class="mpop-input" id="msg-input" placeholder="Message">
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <!--Other cdn-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+
+    <!--firebase library cdn-->
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-database.js"></script>
+
+    <script src="js/cookie.js"></script>
+    <script src="js/config.js" ></script>
+    <script src="js/app.js" ></script>
+
+
+</body>
+
+</html>

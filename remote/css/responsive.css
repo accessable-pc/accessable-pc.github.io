@@ -1,0 +1,79 @@
+@media only screen and (max-width: 1300px){
+    .intro p {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .panel{
+        width: 100%;
+        left: 0;
+        bottom: 0px;
+        top: auto;
+        max-height: 100vh;
+        height: 90vh;
+        top: 80px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .message-pop{
+        left: calc(50% - 150px);
+        top: calc(50vh - 78px);
+        bottom: auto;
+    }
+
+    .intro p{
+        width: 35%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .intro p{
+        width: 55%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .cmd-in{
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        left: 0px;
+        height: 50px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        padding: 10px 20px;
+    }
+    .panel{
+        padding: 20px;
+    }
+
+    .login-panel{
+        background-color: transparent;
+    }
+    .action-panel{
+        background-color: transparent;
+    }
+
+    .intro h1{
+        font-size: 25px;
+    }
+
+    .intro p{
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 340px){
+    .login-panel, .action-panel{
+        width: 100%;
+        left: 0;
+    }
+
+    .message-pop{
+        width: 94%;
+        left: 3%;
+    }
+}
+

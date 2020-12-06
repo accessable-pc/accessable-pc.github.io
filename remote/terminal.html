@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+
+    <title>Terminal - Accessable</title>
+    <link rel="icon" href="assets/favicon.png" sizes="16x16" type="image/png">
+
+</head>
+
+<body>
+
+    <div class="main">
+        <header>
+            <img class="favicon" src="assets/favicon.png" alt="">
+            <a class="displayname_drop" id="pc-name"></a>
+        </header>
+        <main>
+            <div class="panel">
+                <div class="pane-head">
+                    <h1 class="terminal-head">Terminal</h1>
+                    <input type="text" class="cmd-in" id="command-in" placeholder="$ command">
+                </div>
+                <div class="command-log">
+                    <p id="com_log" style="white-space: pre-line;">
+                        loading status..                                   
+                    </p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!--Other cdn-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+
+    <!--firebase library cdn-->
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-database.js"></script>
+    
+    <!--Self-hosted scripts-->
+    <script src="js/config.js" type="text/JavaScript"></script>
+    <script src="js/cookie.js" type="text/JavaScript"></script>
+    <script src="js/app.js" type="text/JavaScript"></script>
+    <script src="js/terminal.js" type="text/JavaScript"></script>
+
+
+</body>
+
+</html>

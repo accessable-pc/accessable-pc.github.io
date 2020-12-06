@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+
+    <title>Activation - Access your pc.</title>
+    <link rel="icon" href="assets/favicon.png" sizes="16x16" type="image/png">
+
+</head>
+
+<body>
+
+    <div class="login-main">
+        <header>
+            <img class="favicon" src="assets/favicon.png" alt="">
+            <button id="deactivate-btn" class="next-btn d-activate-btn">Deactivate</button>
+        </header>
+        <main>
+            <div class="login-panel">
+                <div class="login-head">
+                    <h2>Access your pc</h2>
+                    <p>Enter your login code to access your pc even your internet is slow as a snail!</p>
+                </div>
+                <div>
+                    <input id="login-code" class="login-code-input" type="text" placeholder="ABCDE12345">
+                    <button id="login-button" class="next-btn">Continue</button>
+                </div>
+            </div>
+        </main>
+
+        <p class="alert-pop" id="a-pop">Couldn't  sign  In</p>
+    </div>
+
+    <div class="message-pop" id="d-pop">
+        <div class="m-pop-head">
+            <h2>Deactivate</h2>
+            <p>Feeling hacked?! Dont't worry, just deactivate your pc's remote access here!</p>
+        </div>
+        <input type="text" class="mpop-input" style="margin-bottom: 10px;" id="da-input" placeholder="Your Code">
+        <div class="check-per">
+            <input type="checkbox" id="permanent-check" name="veh">
+            <label for="veh"> Delete permanently</label><br>
+        </div>
+        <button id="de-go" class="next-btn  deactivate-go-btn">Deactivate</button>
+
+    </div>
+
+    <!--Other cdn-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+
+    <!--firebase library cdn-->
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-database.js"></script>
+    
+    <!--Self-hosted scripts-->
+    <script src="js/config.js"></script>
+    <script src="js/cookie.js"></script>
+    <script src="js/login.js" ></script>
+
+
+
+
+</body>
+
+</html>
